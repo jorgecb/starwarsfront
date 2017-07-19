@@ -1,0 +1,30 @@
+<div>
+   
+<ul class="list">
+    <li ng-repeat=" opt in objects" >
+    <div class="name"> {{ opt.name }}</div> 
+    <div class="dats"><span> gravity: {{ opt.gravity }}</span>
+    <span> terreno: {{ opt.terrain }}</span>
+    </div> 
+    <button class="w3-btn w3-green" ng-click="opt.show=!opt.show">
+        Mostrar Residentes
+    </button>
+  
+    <div class="residents"  ng-show="opt.show">
+         <div class="resident" ng-repeat=" residente in opt.residents">
+             <personaje-card res="res" url='residente'></personaje-card>
+         
+         </div> 
+    </div> 
+
+</li>
+    </ul>
+    <div class="page">
+        <span class="prev" ng-click="updateList(page=(page>1)?page-1:1)"><<<  </span>
+        
+        <span class="numberpage">{{page}}</span>
+        <span class="next" ng-click="updateList(page=page+1)">>>>  </span>
+    </div>
+    </div> 
+    
+    

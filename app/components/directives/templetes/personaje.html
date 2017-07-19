@@ -1,0 +1,39 @@
+<div class="personcard-8 persondark-grey">
+
+<div class="personcontainer personcenter">
+  <h3>PERSONAJE: sin foto</h3>
+  <img src="http://www.w3im.com/w3css/img_avatar3.png" alt="Avatar" style="width:150px">
+  <h5>{{res[index].name}}</h5>
+
+  
+  <table>
+      <tr>
+          <th>Estatura</th>
+          <th> Peso</th>
+          <th>Cabello</th>
+          <th>ojos</th>
+          <th>Sexo</th>
+          <th>Cumple</th>
+
+                              
+      </tr>
+      
+      <tr>
+          <td>{{res[index].height}}</td>
+          <td>{{res[index].mass}}</td>
+          <td>{{res[index].hair_color}}</td>
+          <td>{{res[index].eye_color}}</td>
+          <td>{{res[index].gender}}</td>
+          <td>{{res[index].birth_year}}</td>
+          
+
+                              
+      </tr>
+  </table>
+<div ng-show='btns'>
+  <button class="personbtn persongreen" ng-click="index=index-1">ANTERIOR</button>
+  <button class="personbtn personred" ng-click="index=index+1">SIGUIENTE</button>
+</div>
+</div>
+
+</div>

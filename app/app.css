@@ -1,0 +1,86 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+.list{
+    width: 50%;
+    list-style: none;
+    
+}
+.list>li{
+   background: #ccC;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.list li .dats{
+    
+}
+.list li .dats>span{
+    margin-right: 37px;
+    font-weight: lighter;
+    font-family: cursive;
+}
+.list li .name{
+        font-size: 18px;
+    font-weight: bolder;
+}
+.persondark-grey{
+    background: #000;
+    color:#ffffff;
+    width: 40%;
+    
+}
+.persondark-grey{
+    background: #000;
+    color:#ffffff;
+    width: 40%;
+    text-align: center;
+        
+    
+}
+.persongreen{
+    background-color: green;
+}
+.personred{
+    background-color: red;
+}
+table th{
+    border: none;
+    border-left: 1px solid #ccc;
+    padding: 3px;
+}
+table td{
+  border: none;
+    border-button: 1px solid #ccc;
+padding: 3px;
+}
+table{
+  width: 80%;
+  margin:auto;
+  display: block;
+  position:relative;
+  margin-top:10px;
+  margin-bottom: 10px;
+}

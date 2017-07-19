@@ -1,0 +1,24 @@
+<div>
+    ordenar por:
+    <select ng-model="order" ng-change="updateList(0)">
+        <option ng-click="">nombre</option>
+        <option ng-click="updateList(0)">peso</option>
+    </select>
+<ul class="list">
+    <li ng-repeat=" opt in objects" >
+        <div class="name"> {{ opt.name }}</div> 
+        <div class="dats"><span> estatura: {{ opt.height }}</span>
+        <span> peso: {{ opt.mass }}</span>
+        </div> 
+        
+    </li>
+    </ul>
+    <div class="page">
+        <span class="prev" ng-click="updateList(page=(page>1)?page-1:1)"><<<  </span>
+        
+        <span class="numberpage">{{page}}</span>
+        <span class="next" ng-click="updateList(page=page+1)">>>>  </span>
+    </div>
+    </div> 
+    
+    
