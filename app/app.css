@@ -46,16 +46,11 @@
         font-size: 18px;
     font-weight: bolder;
 }
+
 .persondark-grey{
     background: #000;
     color:#ffffff;
-    width: 40%;
-    
-}
-.persondark-grey{
-    background: #000;
-    color:#ffffff;
-    width: 40%;
+    width: 80%;
     text-align: center;
         
     
